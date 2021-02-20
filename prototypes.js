@@ -16,6 +16,7 @@
   * destroy() // prototype method that returns: `${this.name} was removed from the game.`
 */
 
+
 /*
   === CharacterStats ===
   * healthPoints
