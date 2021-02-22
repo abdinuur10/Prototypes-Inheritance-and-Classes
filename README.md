@@ -1,7 +1,7 @@
 # Prototypes, Inheritance and Classes
 
 This challenge focuses on using the `this` keyword as well as getting comfortable with prototypes and classes by building out a fantasy themed video game and your family tree.
->>> "I MADE A CHANGE"
+>>> "I MADE A CHANGE" 
 ## Set Up The Project With Git
 
 **Follow these steps to set up and work on your project:**

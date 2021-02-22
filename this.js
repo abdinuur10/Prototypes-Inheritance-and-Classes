@@ -14,10 +14,10 @@
 
 // Principle 1
 
-// code example for Window Binding
-function saySport(sport) {
+// // code example for Window Binding
+function saySport(Sport) {
     console.log(this);
-    return sport
+    return Sport
 }
 saySport("soccer")
 

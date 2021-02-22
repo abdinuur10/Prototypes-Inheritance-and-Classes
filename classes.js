@@ -6,45 +6,46 @@
 // Give it "Name", "Age", "Hobby" properties
 // Also give it a method "Speak", which says "Hello, My name is + name + and I'm + age + years old. I love + Hobby"
 
-function Person(attributes) {
+class Person{
+    constructor (attributes){
     this.age = attributes.age;
     this.myName = attributes.myName;
     this.Hobby = attributes.Hobby;
-    this.speak = function () {
+    }
+    speak(){
       return `Hello, my name is ${this.myName} and I am ${this.age}, I love playing ${this.Hobby}`;
     };
   }
   
-  const Mohamed = new Person({
+  const Mohamed = new Parent({
     age: 55,
     myName: "Mohamed",
     Hobby: "Soccer"
   });
   
-  function child(childAttributes) {
-    Person.call(this, childAttributes);
-    console.log(childAttributes);
+  class ChildExtendParent{
+      constructor(GrandChildAttributes){
+          super(GrandChildAttributes)
+
+      speak(){
+        return `Hello, my name is ${this.myName} and I am ${this.age}, I love playing ${this.Hobby}`;
+      };
   }
-  
-  child.prototype = Object.create(Person.prototype);
-  
-  const Abdirahman = new child({
-    age: 12,
-    myName: "Abdirahman",
-    Hobby: "Baseball"
-  });
-  
-  const Siham = new child({
-    age: 18,
-    myName: 'Siham',
-    Hobby: 'Batman'
-  });
-  
-  const Muna = new child({
-    age: 17,
-    myName: 'Muna',
-    Hobby: 'Quiter'
-  });
+    const Abdirahman = NewChild({
+        age: 12,
+        myName: 'Abdirahman' ,
+        Hobby: 'Baseball'
+    })
+
+    Class ChildExtendParent{
+        constructor(GrandChildAttributes){
+            super(GrandChildAttributes)
+        }
+        speak(){
+          return `Hello, my name is ${this.myName} and I am ${this.age}, I love playing ${this.Hobby}`;
+        };
+    }
+
   
   console.log(Mohamed.speak());
   console.log(Abdirahman.speak());
@@ -52,6 +53,7 @@ function Person(attributes) {
   console.log(Muna.speak());
 
 
+  
 
 
 
